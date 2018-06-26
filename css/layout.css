@@ -271,22 +271,22 @@ body {
 }
 .sticky {
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  height: auto;
+  display: inline-block;
+  margin: 0 auto;
+ 
   background: linear-gradient(45deg, rgb(246,46,36), rgb(255,133,27), rgb(255,221,0), rgb(46,204,64), rgb(0,116,217), rgb(176,13,201));
-  background-size: 200%;
+  background-size: 100%;
   animation: gba 20s infinite;
 }
 .sticky .header {
   margin-bottom: 80px;
 }
 .sticky .logo2 {
-  height: 100%;
+  display:none;
   width: 141px;
-  display: flex;
+ 
   align-self: center;
 }
 @keyframes gba { 
@@ -315,45 +315,32 @@ body {
     right: -90px;
   width: 220px;
   height: 40px;
-
 }
 .side-btn a{
- 
   line-height: 49px;
   font-size: 14px;
   
 }
 .sticky {
-	display:none;
+  display:none;
 }
 #img-container {
 
-   margin-top: 30px;
+ margin-top: 30px;
  padding-top: 8px;
 
 }
 .img-block {
-
-    
-    display: block!important;
+   display: block!important;
    margin-bottom: 8px;
-
- 
-
 }
 .img-block img {
-
-    
-  
    width: 100%;
- 
-
 }
 
 .img-block:hover
 {
-  
-    transform: scale(1);
+     transform: scale(1);
 }
 }
 
