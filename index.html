@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FlickrProv</title>
+<link 
+   rel = "stylesheet"
+   type = "text/css"
+   href = "./css/layout.css" />
+<link 
+   rel="stylesheet" 
+   href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet"> 
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="./assets/favicon/site.webmanifest">
+<meta name="author" content="David Szmak - Front End Developer">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+<div id="container">
+		<h1 class="headline">Arbetsprov</h1>
+		<h2>David Szmak - Front End Developer</h2>
+		<!-- Search Flickr -->
+		<div class="header" id="myHeader">
+		<img class="logo2" id="myHeader" src="./assets/flikr.png">
+		<div id="search-bar">
+			<form class="center" onsubmit="return searchFlickr(searchText.value);">
+				<input type="text" class="search-input" name="searchText" placeholder="Search picture from Flikr.com" />
+			</form>
+		</div>
+</div>
+<div class="side-btn right-side-btn">	
+		<div id="see-gallery" onClick="seeGallery()"><a>Lägg till & Visa Galleri   <i class="fas fa-archive"></i></a></div>		
+	 </div>
+		<!-- Image container -->
+		<div class="img-cont" id="img-container"></div>
+	</div>
+	<!-- ZOOM -->
+	<div id="imgModal" class="modal">
+		<!--Button X -->
+		<span class="close" onclick="document.getElementById('imgModal').style.display='none'"><i class="fas fa-times-circle"></i></span>
+
+		<!-- Image -->
+		<img class="modal-image" id="displayImg">
+
+		<!-- Caption -->
+		<div id="caption"></div>
+	</div>
+</body>
+ <script src="./js/index.js"></script> 
+</html>
