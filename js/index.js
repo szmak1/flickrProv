@@ -14,6 +14,7 @@ let options = {
 	"text": "flickr"
 }
 
+
 // show selected pictures
 let seeGallery = function() {
 	ifGallery = true;
@@ -160,6 +161,7 @@ let zoomImg = function(element) {
 	modalCaption.innerHTML = element.target.title;
 };
 
+
 // Stick footer / header
 window.onscroll = function() {myFunction()};
 
@@ -173,4 +175,3 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-
