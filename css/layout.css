@@ -93,6 +93,16 @@ body {
 	margin-bottom: -5px;
 	transition: transform .2s;
 }
+.img-block:last-child{
+	
+    
+    margin-bottom: 160px;
+}
+.img-block:nth-child(1){
+	
+    
+    margin-top: 160px;
+}
 .img-block:hover
 {
     transition: box-shadow  0.2s;
@@ -273,7 +283,7 @@ body {
   width: 100%;
   display: inline-block;
   margin: 0 auto;
- 
+  z-index: 999;
   background: linear-gradient(45deg, rgb(246,46,36), rgb(255,133,27), rgb(255,221,0), rgb(46,204,64), rgb(0,116,217), rgb(176,13,201));
   background-size: 100%;
   animation: gba 20s infinite;
@@ -343,8 +353,11 @@ body {
 {
      transform: scale(1);
 }
-.search-input:focus {
-	
+.img-block:last-child{
+    margin-bottom: 80px;
+}
+.img-block:nth-child(1){
+    margin-top: 80px;
 }
 }
 
