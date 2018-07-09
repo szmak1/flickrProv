@@ -19,6 +19,7 @@ let options = {
 let seeGallery = function() {
 	ifGallery = true;
 	showPhotos(picSelected);
+	document.getElementById(".sticky").style.visibility = "hidden";
 };
 
 // Request flickr REST API
@@ -162,7 +163,7 @@ let zoomImg = function(element) {
 };
 
 
-// Stick footer / header
+// Stick header
 window.onscroll = function() {myFunction()};
 
 let header = document.getElementById("myHeader");
